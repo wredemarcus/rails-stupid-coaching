@@ -1,0 +1,46 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+.chat {
+  font-size: large;
+}
+
+.get-back a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.get-back a:hover {
+  opacity: 0.5;
+}
+
+.messages {
+  width: 400px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.messages p {
+  font-style: italic;
+  text-align: right;
+}
+
+form {
+  margin-top: 70px;
+  text-align: center;
+}

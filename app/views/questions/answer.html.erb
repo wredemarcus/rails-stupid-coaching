@@ -1,0 +1,22 @@
+<h1> Your stupid coach </h1>
+
+<% if params[:question].downcase === "i am going to work"  %>
+    <% @answer = "Great!" %>
+  <% elsif params[:question][-1] === "?" %>
+    <% @answer = "Silly question, get dressed and go to work!" %>
+  <% else %>
+    <% @answer = "I don't care, get dressed and go to work!" %>
+<% end %>
+<div class="chat">
+  <div class="messages">
+    <%= params[:question] %>
+    <p>You</p>
+  </div>
+  <div class="messages">
+    <%= @answer %>
+    <p>Your lovely coach</p>
+  </div>
+  <div class="get-back">
+    <%= link_to "Ask another question", '/ask' %>
+  </div>
+</div>
